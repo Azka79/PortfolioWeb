@@ -92,12 +92,19 @@ const TimelineTitle = styled.h3`
   font-size: 20px;
   font-weight: 600;
   margin: 0px 0px 0px 10px;
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
 `;
 
 const TimelineTitle2 = styled.h3`
   font-size: 20px;
   font-weight: 400;
   margin: 0px 0px 0px 10px;
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
 `;
 
 const TimelineSubtitle = styled.p`
