@@ -63,6 +63,10 @@ const ProfileImage = styled.img`
   height: 100%;
   max-height: 900px;
   object-fit: contain;
+
+  @media (max-width: 767px) {
+    max-height: 90%; /* Batas keras tinggi gambar */
+  }
 `;
 
 const HeroTextContainer = styled.div`
