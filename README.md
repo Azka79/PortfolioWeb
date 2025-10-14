@@ -1,14 +1,8 @@
-<!--
-Untuk menambahkan gambar pratinjau, ambil screenshot website Anda,
-unggah ke dalam tab "Issues" di repository GitHub ini, lalu salin link gambarnya dan tempel di bawah ini.
--->
-
-<!--  -->
-Portofolio Pribadi - Nadiya Azka
+# **Portofolio Pribadi - Nadiya Azka**
 
 Selamat datang di repository kode untuk website portofolio pribadi saya. Website ini dirancang sebagai single-page application (SPA) yang dinamis untuk memamerkan proyek-proyek saya di bidang Teknik Biomedis, khususnya dalam sistem tertanam (embedded systems) dan Internet of Things (IoT).
 
-🔗 Tautan Langsung (Live Demo): azka79.vercel.app
+## 🔗 Tautan Langsung (Live Demo): https://portfolio-web-azka-2025.vercel.app/
 ✨ Fitur Utama
 
     Desain Halaman Tunggal (SPA): Pengalaman pengguna yang mulus tanpa perlu me-refresh halaman, dengan navigasi scroll yang halus.
@@ -23,7 +17,7 @@ Selamat datang di repository kode untuk website portofolio pribadi saya. Website
 
     Desain Responsif: Tampilan yang dioptimalkan untuk berbagai ukuran layar, mulai dari perangkat mobile hingga desktop.
 
-🛠️ Teknologi yang Digunakan
+## 🛠️ Teknologi yang Digunakan
 
     Frontend: React & Vite
 
@@ -33,7 +27,7 @@ Selamat datang di repository kode untuk website portofolio pribadi saya. Website
 
     Deployment: Vercel
 
-🚀 Menjalankan Proyek Secara Lokal
+## 🚀 Menjalankan Proyek Secara Lokal
 
 Jika Anda ingin menjalankan proyek ini di mesin lokal Anda, ikuti langkah-langkah berikut:
 
