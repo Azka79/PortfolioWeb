@@ -86,6 +86,10 @@ const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+
+  @media (max-width: 767px) {
+    max-width: 85%; 
+  }
 `;
 
 const Input = styled.input`

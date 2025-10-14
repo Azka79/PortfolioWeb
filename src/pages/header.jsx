@@ -18,7 +18,7 @@ const HeaderContainer = styled.header`
   /* Inner container untuk menjaga layout */
   & > div {
     max-width: 100%; 
-    padding: 5px 40px;
+    padding: 12px 25px;
     margin: 0 auto;
   }
 `;
@@ -30,6 +30,9 @@ const Nav = styled.nav`
   align-items: center;
   padding: 10px 0;
   min-height: 20px;
+  @media (max-width: 767px) {
+    padding: 10px 0px;
+  }
 `;
 
 const LogoLink = styled.a`
@@ -46,9 +49,8 @@ const MobileNavLinks = styled.ul`
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
-  background-color: #070707;
-  position: absolute;
-  top: 84px; /* Disesuaikan dengan tinggi header */
+  background-color: #070707a3;
+  position: relative;
   left: 0;
   width: 100%;
   padding: 1.5rem 0;

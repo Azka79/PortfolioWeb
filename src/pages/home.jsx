@@ -9,8 +9,7 @@ import instagramIcon from '../assets/Logo Instagram.svg';
 import linkedinIcon from '../assets/Linkedin.svg';
 
 const HomeSectionContainer = styled.div`
-  /* Wrapper ini diperlukan agar padding tidak mengganggu min-height */
-  padding-top: 30px; /* Sesuaikan dengan tinggi header Anda */
+  padding-top: 30px; 
   box-sizing: border-box;
 `;
 
@@ -18,12 +17,17 @@ const MainContent = styled.main`
   padding: 0 50px;
   max-width: 1280px; 
   margin: 0 auto; 
+
+  /* FIX: Kurangi padding di layar kecil */
+  @media (max-width: 767px) {
+    padding: 0 20px;
+  }
 `;
 
 const DecorativeCircle = styled.div`
   position: absolute;
-  top: -900px;
-  right: -150px;
+  top: -120%;
+  right: -15%;
   width: 1000px;
   height: 1000px;
   background-color: #82D842;
@@ -31,14 +35,19 @@ const DecorativeCircle = styled.div`
   filter: blur(1000px);
   opacity: 0.35;
   z-index: 0;
+
+  /* FIX: Sembunyikan lingkaran besar di mobile agar tidak menyebabkan overflow */
+  @media (max-width: 767px) {
+    display: none;
+  }
 `;
 
 const HeroSection = styled.section`
   position: relative;
   display: flex;
-  align-items: center; /* Mengubah dari flex-end agar lebih fleksibel */
+  align-items: center;
   justify-content: flex-start;
-  min-height: 100vh; /* Mengambil tinggi penuh layar */
+  min-height: 100vh;
   box-sizing: border-box;
   text-align: left;
 `;
@@ -51,6 +60,12 @@ const PortfolioTextImage = styled.img`
   z-index: 1;
   width: 100%;
   max-width: 800px;
+
+  /* FIX: Kecilkan dan atur ulang posisi gambar di mobile */
+  @media (max-width: 767px) {
+    max-width: 90%; /* Gunakan persentase agar fleksibel */
+    top: 20%;
+  }
 `;
 
 const ProfileImage = styled.img`
@@ -64,8 +79,13 @@ const ProfileImage = styled.img`
   max-height: 900px;
   object-fit: contain;
 
-  @media (max-width: 767px) {
-    max-height: 90%; /* Batas keras tinggi gambar */
+  /* FIX: Ubah object-fit menjadi cover dan sesuaikan ukuran untuk mobile */
+   @media (max-width: 767px) {
+    object-fit: cover; /* Ini akan 'meng-crop' gambar */
+    width: 100%;      /* Penuhi lebar kontainer */
+    height: 50%;      /* Batasi tingginya agar tidak menutupi semua */
+    max-width: none;  /* Hapus batasan max-width sebelumnya */
+    top: 35%;         /* Sesuaikan kembali posisi vertikalnya */
   }
 `;
 
@@ -73,24 +93,30 @@ const HeroTextContainer = styled.div`
   position: absolute;
   top: 60%;
   z-index: 4;
+
+  /* FIX: Sesuaikan posisi teks di mobile */
+  @media (max-width: 767px) {
+    top: auto; /* Hapus posisi top absolut */
+    bottom: 17%; /* Posisikan dari bawah */
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 `;
 
-// FIX: Menggunakan Transition untuk animasi
 const HeroTitle = styled.h1`
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 700;
-  margin: 0px 0px 0px 0px;
+  margin: 0;
   
   opacity: 0;
   transform: translateY(20px);
-  animation: fadeInSlideUp 0.8s ease-out forwards;
-  animation-delay: 0.2s;
+  animation: fadeInSlideUp 0.8s ease-out forwards 0.2s;
   
   @keyframes fadeInSlideUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    to { opacity: 1; transform: translateY(0); }
   }
 
   @media (min-width: 768px) {
@@ -99,20 +125,16 @@ const HeroTitle = styled.h1`
 `;
 
 const HeroSubtitle = styled.p`
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 275;
   margin: 0px 0px 5px 0px;
 
   opacity: 0;
   transform: translateY(20px);
-  animation: fadeInSlideUp 0.8s ease-out forwards;
-  animation-delay: 0.6s;
+  animation: fadeInSlideUp 0.8s ease-out forwards 0.6s;
 
   @keyframes fadeInSlideUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    to { opacity: 1; transform: translateY(0); }
   }
   
   @media (min-width: 768px) {
@@ -128,14 +150,15 @@ const SocialIcons = styled.div`
 
   opacity: 0;
   transform: translateY(20px);
-  animation: fadeInSlideUp 0.8s ease-out forwards;
-  animation-delay: 0.8s;
+  animation: fadeInSlideUp 0.8s ease-out forwards 0.8s;
 
   @keyframes fadeInSlideUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 767px) {
+    justify-content: center;
+    margin: 30px 0px 0px 0px;
   }
 `;
 
@@ -148,7 +171,6 @@ const IconLink = styled.a`
   }
 `;
 
-// Komponen Home
 function Home() {
     return (
         <HomeSectionContainer id="home">
@@ -166,10 +188,10 @@ function Home() {
                             <IconLink href="https://github.com/Azka79" target="_blank" rel="noopener noreferrer">
                                 <img src={githubIcon} alt="Github" />
                             </IconLink>
-                            <IconLink href="https://www.instagram.com/daz_azka/" target="_blank" rel="noopener noreferrer">
+                            <IconLink href="#" target="_blank" rel="noopener noreferrer">
                                 <img src={instagramIcon} alt="Instagram" />
                             </IconLink>
-                            <IconLink href="https://www.linkedin.com/in/nadiyaazkaa/" target="_blank" rel="noopener noreferrer">
+                            <IconLink href="#" target="_blank" rel="noopener noreferrer">
                                 <img src={linkedinIcon} alt="LinkedIn" />
                             </IconLink>
                         </SocialIcons>

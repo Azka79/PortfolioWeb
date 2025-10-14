@@ -25,7 +25,7 @@ const AboutSection = styled.section`
 const ContentContainer = styled.div`
   max-width: 700px; /* Batas lebar konten agar tidak terlalu melebar di layar besar */
   width: 100%;
-  padding: 0 100px;
+  padding: 0 50px;
   text-align: left;
   z-index: 2; /* Memastikan konten berada di atas overlay */
   color: #FFFFFF; /* Warna teks utama */
@@ -34,7 +34,7 @@ const ContentContainer = styled.div`
   gap: 10px; /* Jarak antara paragraf */
 
   @media (min-width: 768px) {
-    padding: 0 180px;
+    padding: 0 150px;
   }
 `;
 

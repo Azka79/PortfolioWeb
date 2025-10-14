@@ -18,7 +18,6 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden; // Mencegah scroll horizontal
     overflow-x: hidden;
   }
 
