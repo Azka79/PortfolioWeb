@@ -2,7 +2,7 @@
 
 Selamat datang di repository kode untuk website portofolio pribadi saya. Website ini dirancang sebagai single-page application (SPA) yang dinamis untuk memamerkan proyek-proyek saya di bidang Teknik Biomedis, khususnya dalam sistem tertanam (embedded systems) dan Internet of Things (IoT).
 
-## 🔗 Tautan Langsung (Live Demo): azka79.vercel.app
+## 🔗 Tautan Langsung (Live Demo): https://portfolio-web-azka-2025.vercel.app/
 ✨ Fitur Utama
 
     Desain Halaman Tunggal (SPA): Pengalaman pengguna yang mulus tanpa perlu me-refresh halaman, dengan navigasi scroll yang halus.
