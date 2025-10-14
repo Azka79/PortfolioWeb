@@ -1,8 +1,14 @@
+<!--
+Untuk menambahkan gambar pratinjau, ambil screenshot website Anda,
+unggah ke dalam tab "Issues" di repository GitHub ini, lalu salin link gambarnya dan tempel di bawah ini.
+-->
+
+<!--  -->
 Portofolio Pribadi - Nadiya Azka
 
 Selamat datang di repository kode untuk website portofolio pribadi saya. Website ini dirancang sebagai single-page application (SPA) yang dinamis untuk memamerkan proyek-proyek saya di bidang Teknik Biomedis, khususnya dalam sistem tertanam (embedded systems) dan Internet of Things (IoT).
 
-🔗 Tautan Langsung (Live Demo): nama-anda.vercel.app
+🔗 Tautan Langsung (Live Demo): azka79.vercel.app
 ✨ Fitur Utama
 
     Desain Halaman Tunggal (SPA): Pengalaman pengguna yang mulus tanpa perlu me-refresh halaman, dengan navigasi scroll yang halus.
@@ -33,8 +39,8 @@ Jika Anda ingin menjalankan proyek ini di mesin lokal Anda, ikuti langkah-langka
 
 1. Clone Repository
 
-git clone [link](link)
-cd NAMA_REPO
+git clone [https://github.com/Azka79/PortfolioWeb.git](https://github.com/Azka79/PortfolioWeb.git)
+cd PortfolioWeb
 
 2. Install Dependencies
 
