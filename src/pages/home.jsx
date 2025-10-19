@@ -188,10 +188,10 @@ function Home() {
                             <IconLink href="https://github.com/Azka79" target="_blank" rel="noopener noreferrer">
                                 <img src={githubIcon} alt="Github" />
                             </IconLink>
-                            <IconLink href="#" target="_blank" rel="noopener noreferrer">
+                            <IconLink href="https://www.instagram.com/daz_azka/" target="_blank" rel="noopener noreferrer">
                                 <img src={instagramIcon} alt="Instagram" />
                             </IconLink>
-                            <IconLink href="#" target="_blank" rel="noopener noreferrer">
+                            <IconLink href="https://www.linkedin.com/in/nadiyaazkaa/" target="_blank" rel="noopener noreferrer">
                                 <img src={linkedinIcon} alt="LinkedIn" />
                             </IconLink>
                         </SocialIcons>
