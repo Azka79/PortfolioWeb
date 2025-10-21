@@ -12,7 +12,7 @@ const projectData = [
     longDescription: "This project focused on creating a non-invasive vital sign monitoring system using a 24GHz radar sensor. The system leverages the Doppler effect to detect minute chest wall movements caused by breathing and heartbeats. Raw data was processed using advanced signal processing techniques, and a Bi-directional Long Short-Term Memory (Bi-LSTM) neural network was trained to predict vital signs with high accuracy. The device was built on an STM32 microcontroller for real-time processing.",
     images: [
       "https://media.licdn.com/dms/image/v2/D5622AQH1CZKHNyg2Og/feedshare-shrink_1280/B56ZiCluOpHUAs-/0/1754537585054?e=1763596800&v=beta&t=KgwnIjeb9-Lvxh_BCohy46qgGEboJKy6NeucrD_rNfo",
-      "https://placehold.co/800x600/070707/82D842?text=Diagram",
+      "https://media.licdn.com/dms/image/v2/D5622AQHqUeAMpeeP5Q/feedshare-shrink_800/B56ZiCluRbHQAg-/0/1754537589786?e=1762387200&v=beta&t=piHiMOMXi9TYDGSLBZacX-uxC72JU4fAr573OSQe6O4",
       "https://media.licdn.com/dms/image/v2/D5622AQGTRq47Sx-Adw/feedshare-shrink_1280/B56ZiCluP7G4Ak-/0/1754537585599?e=1763596800&v=beta&t=UMeTU_VbrcGEOrGCq_XAHbyAgpQqTB5_sRPaTOahTuw",
     ],
   },
@@ -24,8 +24,8 @@ const projectData = [
     description: "Designed and built a two-wheel drive vehicle using MPU6050 for motion sensing...",
     longDescription: "A hands-on project to build a gesture-controlled vehicle. An MPU6050 accelerometer/gyroscope captures hand movements, which are transmitted wirelessly via nRF24L01 modules to an Arduino-based receiver on the vehicle. The vehicle's motors are controlled based on the received orientation data, allowing for intuitive, real-time navigation.",
     images: [
-      "https://placehold.co/800x600/82D842/070707?text=2WD+Vehicle",
-      "https://placehold.co/800x600/070707/82D842?text=Controller",
+      "https://media.licdn.com/dms/image/v2/D562DAQE-QdR_h6esZg/profile-treasury-image-shrink_800_800/B56ZoFY0L6J8AY-/0/1761026989276?e=1761634800&v=beta&t=bXy74wrnBTJxa4NvABuMf0hngOnLqRj8POr5lH59IEA",
+      "https://media.licdn.com/dms/image/v2/D562DAQE_AELRCp4FCQ/profile-treasury-image-shrink_800_800/B56ZoFY30YKAAY-/0/1761027003548?e=1761634800&v=beta&t=Oe-Bw3MZA19KmAblBUx3TFGzoF7_r-8k9DYsSdmnWlI",
     ],
   },
   {
@@ -38,6 +38,7 @@ const projectData = [
      images: [
       "https://media.licdn.com/dms/image/v2/D5622AQFD3sfdLcj3jA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1727402377517?e=1763596800&v=beta&t=4JP7S2TwUMU1KVfUReLnacXrTQzqawf7WmivIlH5lCg",
       "https://media.licdn.com/dms/image/v2/D5622AQGO6hVJa_SjuQ/feedshare-shrink_1280/feedshare-shrink_1280/0/1729218565905?e=1763596800&v=beta&t=p9-8eJFdchhFXaJFdN_wA_6gb0yI4K4ZU0hBM9k4XlE",
+      "https://media.licdn.com/dms/image/v2/D5622AQFDW6RqcCYFXA/feedshare-shrink_800/feedshare-shrink_800/0/1729218565850?e=1762387200&v=beta&t=-O0h03GBm8u7eGyxXpUZd0buugTd-kVVte5lGLtv5K0",
     ],
   },
    {
