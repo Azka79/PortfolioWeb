@@ -260,7 +260,7 @@ function Resume() {
                     
                     <AnimatedItem isInView={isInView} delay="0.7s">
                          {/* Ganti "#" dengan link Google Drive Anda */}
-                        <DownloadButton href="https://drive.google.com/file/d/1FxfLUhx13HTNLfm0-XRywXO6XO5rIrkD/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                        <DownloadButton href="https://drive.google.com/file/d/1DbQW7J8HNFFP0sMNkcruB6SAAA8YHYcO/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
                             Download Full CV
                         </DownloadButton>
                     </AnimatedItem>
